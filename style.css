@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.layout__wrapper {
+    padding: 20px 0 72px;
+    background-image: url(resources/background@3x.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.layout__container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-inline: clamp(30px, 5%, 72px);
+}
+
+.pricing {
+    margin: 44px 0;
+}
+.pricing__info {
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+}
+.pricing__title {
+    font-size: 4rem;
+    color: #fff;
+}
+.pricing__subtitle {
+    font-size: 2rem;
+    color: #fff;
+    line-height: 1.5;
+    font-weight: 400;
+    margin: 16px 0 72px;
+}
+.pricing-form {
+    margin: 0 auto;
+    padding: 32px;
+    max-width: calc(746px + 32px * 2);
+    border-radius: 20px;
+    background-color: #cdd5e054;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 24px 12px;
+}
+.pricing-form__field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1 1 calc(50% - 12px);
+}
+.pricing-form__field--full {
+    flex: 1 1 calc(100% - 12px);
+}
+.pricing-form__input,
+.pricing-form__select,
+.pricing-form__textarea,
+.pricing-form__submit {
+    background-color: #fff;
+    padding: 24px 18px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.15);
+}
+.pricing-form__label {
+    font-size: 0.875rem;
+    color: #fff;
+}
+.pricing-form__submit {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #4036A9;
+    font-style: normal;
+}
+.pricing-form__submit:hover {
+    background-color: #afa9f3; 
+}
+.pricing-form__submit:active {
+    background-color: #847ece; 
+    transform: scale(0.98);    
+}
+.pricing-form__input,
+.pricing-form__select,
+.pricing-form__textarea {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333333;
+    font-family: inherit;
+}
+.pricing-form__input::placeholder {
+    color: #CDD5E0;
+}
+.pricing-form__select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("resources/Expand_down.svg");
+    background-repeat: no-repeat;
+    background-position: right 1.3rem center;
+    padding-right: 2rem;
+}
+.pricing-form__input {
+    border: 1px solid #cccccc;
+    outline: none;
+}
+.pricing-form--submitted input:invalid {
+    border-color: #e74c3c;
+    box-shadow: 0 0 0 2px rgba(231,76,60,0.3);
+}
+@media (max-width: 640px) {
+    .pricing-form__field {
+        flex: 1 1 100%;
+    }
+    .pricing__title {
+        font-size: 2.5rem;
+    }
+    .pricing__subtitle {
+        font-size: 1rem;
+    }
+}
