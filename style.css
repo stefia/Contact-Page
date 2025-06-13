@@ -119,7 +119,7 @@ body {
         padding-inline: 15px;
     }
     .pricing-form {
-        padding: 16px;
+        padding: 16px 12px;
     }
     .pricing-form__field {
         flex: 1 1 100%;
